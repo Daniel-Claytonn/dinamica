@@ -20,7 +20,7 @@
 
 <script>
     function turfe() {
-        div_msg.innerHTML += ""
+        div_msg.innerHTML = ""
 
         var cavalo = [
             { um: "um" },
@@ -32,14 +32,15 @@
 
         var voltas = 7
         
+        var valor1 = (7 + Math.random() * 2).toFixed(2)
+        var valor2 = (7 + Math.random() * 2).toFixed(2)
+        var valor3 = (7 + Math.random() * 2).toFixed(2)
 
         for (var i = 1; i <= voltas; i++) {
 
-            cavalo[0] = (7 + Math.random() * 2).toFixed(2)
-            cavalo[1] = (7 + Math.random() * 2).toFixed(2)
-            cavalo[2] = (7 + Math.random() * 2).toFixed(2)
+            
 
-            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${cavalo[0]}, Cavalo 2 - ${cavalo[1]}, Cavalo 3 - ${cavalo[2]} <br><br> `
+            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, Cavalo 2 - ${valor2}, Cavalo 3 - ${valor3} <br><br> `
 
         }
 
