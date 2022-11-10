@@ -1,1 +1,1 @@
-# dinamica
+!# dinamica
