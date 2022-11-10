@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <p>Informe o nome dos cavalos</p>
+    <input type="text" id="in_nomes1">
+    <input type="text" id="in_nomes2">
+    <input type="text" id="in_nomes3">
 
     <button onclick="turfe()">Dar largada</button>
 
@@ -22,10 +26,14 @@
     function turfe() {
         div_msg.innerHTML = ""
 
+        var nome1 = in_nomes1.value
+        var nome2 = in_nomes2.value
+        var nome3 = in_nomes3.value
+
         var cavalo = [
-            { um: "um" },
-            { dois: "dois" },
-            { tres: "tres" }
+            { nome },
+            { nome },
+            { nome }
         ]
 
         var sorteio = 7 + Math.random() * 2
@@ -44,14 +52,10 @@
             calculo1 = calculo1 + Number(valor1)
             calculo2 = calculo2 + Number(valor2)
             calculo3 = calculo3 + Number(valor3)
-            
-            
+
+
             div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, ${calculo1.toFixed(2)}, Cavalo 2 - ${valor2},${calculo2.toFixed(2)},  Cavalo 3 - ${valor3}, ${calculo3.toFixed(2)} <br><br>`
-
-
         }
-
-
 
     }
 
