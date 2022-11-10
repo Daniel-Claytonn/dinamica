@@ -41,12 +41,12 @@
             var valor2 = (7 + Math.random() * 2).toFixed(2)
             var valor3 = (7 + Math.random() * 2).toFixed(2)
 
-            calculo1 = calculo1 + valor1
-            calculo2 = calculo2 + valor2
-            calculo3 = calculo3 + valor3
+            calculo1 = calculo1 + Number(valor1)
+            calculo2 = calculo2 + Number(valor2)
+            calculo3 = calculo3 + Number(valor3)
             
             
-            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, ${calculo1}, Cavalo 2 - ${valor2},${calculo2},  Cavalo 3 - ${valor3}, ${calculo3} <br><br> `
+            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, ${calculo1.toFixed(2)}, Cavalo 2 - ${valor2},${calculo2.toFixed(2)},  Cavalo 3 - ${valor3}, ${calculo3.toFixed(2)} <br><br>`
 
 
         }
