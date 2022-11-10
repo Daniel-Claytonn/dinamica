@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,18 +20,25 @@
 
 <script>
     function turfe() {
+        div_msg.innerHTML += ""
+
         var cavalo = [
             { um: "um" },
             { dois: "dois" },
             { tres: "tres" }
         ]
 
+        var sorteio = 7 + Math.random() * 2
+
         var tempo = 7
 
         for (var i = 0; i <= tempo; i++) {
 
-            
-            div_msg.innerHTML += `${i}`
+            cavalo[0] = (7 + Math.random() * 2).toFixed(2)
+            cavalo[1] = 7 + Math.random() * 2
+            cavalo[2] = 7 + Math.random() * 2
+
+            div_msg.innerHTML += `${i} e ${cavalo[0]}`
 
         }
 
