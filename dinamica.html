@@ -30,15 +30,16 @@
 
         var sorteio = 7 + Math.random() * 2
 
-        var tempo = 7
+        var voltas = 7
+        
 
-        for (var i = 0; i <= tempo; i++) {
+        for (var i = 1; i <= voltas; i++) {
 
             cavalo[0] = (7 + Math.random() * 2).toFixed(2)
-            cavalo[1] = 7 + Math.random() * 2
-            cavalo[2] = 7 + Math.random() * 2
+            cavalo[1] = (7 + Math.random() * 2).toFixed(2)
+            cavalo[2] = (7 + Math.random() * 2).toFixed(2)
 
-            div_msg.innerHTML += `${i} e ${cavalo[0]}`
+            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${cavalo[0]}, Cavalo 2 - ${cavalo[1]}, Cavalo 3 - ${cavalo[2]} <br><br> `
 
         }
 
