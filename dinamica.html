@@ -32,19 +32,21 @@
 
         var voltas = 7
 
-        var calculo = []
-        
+        var calculo1 = 0
+        var calculo2 = 0
+        var calculo3 = 0
+
         for (var i = 1; i <= voltas; i++) {
             var valor1 = (7 + Math.random() * 2).toFixed(2)
             var valor2 = (7 + Math.random() * 2).toFixed(2)
             var valor3 = (7 + Math.random() * 2).toFixed(2)
 
-
-            calculo.push(valor1)
-            calculo.push(valor2)
-            calculo.push(valor3)
+            calculo1 = calculo1 + valor1
+            calculo2 = calculo2 + valor2
+            calculo3 = calculo3 + valor3
             
-            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, ${calculo.valor1[i-1]} Cavalo 2 - ${valor2}, Cavalo 3 - ${valor3} <br><br> `
+            
+            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, ${calculo1}, Cavalo 2 - ${valor2},${calculo2},  Cavalo 3 - ${valor3}, ${calculo3} <br><br> `
 
 
         }
