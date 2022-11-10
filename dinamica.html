@@ -31,18 +31,24 @@
         var sorteio = 7 + Math.random() * 2
 
         var voltas = 7
+
+        var calculo = []
         
-        var valor1 = (7 + Math.random() * 2).toFixed(2)
-        var valor2 = (7 + Math.random() * 2).toFixed(2)
-        var valor3 = (7 + Math.random() * 2).toFixed(2)
-
         for (var i = 1; i <= voltas; i++) {
+            var valor1 = (7 + Math.random() * 2).toFixed(2)
+            var valor2 = (7 + Math.random() * 2).toFixed(2)
+            var valor3 = (7 + Math.random() * 2).toFixed(2)
 
+
+            calculo.push(valor1)
+            calculo.push(valor2)
+            calculo.push(valor3)
             
+            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, ${calculo.valor1[i-1]} Cavalo 2 - ${valor2}, Cavalo 3 - ${valor3} <br><br> `
 
-            div_msg.innerHTML += `Volta ${i} <br> Cavalo 1 - ${valor1}, Cavalo 2 - ${valor2}, Cavalo 3 - ${valor3} <br><br> `
 
         }
+
 
 
     }
